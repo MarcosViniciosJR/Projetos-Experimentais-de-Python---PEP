@@ -1,7 +1,16 @@
-#Teste de Codigo com Menu"
-print("="*99)
+"""
+Sistema de Cadastro e Gestão Acadêmica Fictícia - Turma de TI
+Etapa atual: Reformulando e polindo a estrutura base do menu e lista inicial de alunos.
+"""
 
-print("\n  CADASTRO DE ALUNOS DA TURMA DE TI  \n")
+__autor__ = "Marcos Vincios 'JR'"
+__versao__ = "0.1.0"
+__data_hora__ = "20/11/2026 20:52"
+
+print("="*99)
+print(f"\n  CADASTRO DE ALUNOS DA TURMA DE TI  |  Versão: {__versao__}"
+      f"\n  Feito por: {__autor__}\n")
+
 print("-"*99)
 lista_alunos = [
     ["Lucas", 22, "Sistemas de Informação", [8.5, 7.0, 9.2]],
@@ -27,32 +36,32 @@ lista_alunos = [
 ]
 
 while True:
-    print("1- Exibir Alunos da Turma de TI\n"
-          "2- Pesquisar Dados da Turma de TI por Filtro\n"
-          "3- Buscar Aluno da Turma de TI\n"
-          "4- Calcular/Exibir Media dos Alunos da Turma de TI\n"
+    print("\n1- Exibir Alunos da Turma de TI\n"
+          "2- Buscar Aluno da Turma de TI por Filtro\n"
+          "3- Exibir Dados da Turma de TI por Filtro\n"
+          "4- Calcular/Exibir Média dos Alunos da Turma de TI\n"
           "5- Cadastrar um Novo Aluno na Turma de TI\n"
-          "6- Gerar Codigo dos Alunos da Turma de TI\n"
-          "7- Gerar Relatorio de Aprovação da Turma\n"
+          "6- Gerar Código dos Alunos da Turma de TI\n"
+          "7- Gerar Relatório de Aprovação da Turma\n"
           "8- Remover um Aluno da Turma de TI\n"
           "9- Mostrar Lista de Alunos Removidos\n"
-          "0- Sair")
-    opcao = int(input("\nDigite uma opção: "))
+          "0- Sair\n")
+    opcao = int(input("Digite uma opção: "))
 
     if opcao == 1:
         print("\n1- Exibir Alunos da Turma de TI")
         print("-"*99)
 
     elif opcao == 2:
-        print("\n2- Pesquisar Dados da Turma de TI por Filtro")
+        print("\n2- Buscar Aluno da Turma de TI por Filtro")
         print("-"*99)
 
     elif opcao == 3:
-        print("\n3- Buscar Aluno da Turma de TI")
+        print("\n3- Exibir Dados da Turma de TI por Filtro")
         print("-"*99)
 
     elif opcao == 4:
-        print("\n4- Calcular/Exibir Media dos Alunos da Turma de TI")
+        print("\n4- Calcular/Exibir Média dos Alunos da Turma de TI")
         print("-"*99)
 
     elif opcao == 5:
@@ -60,11 +69,11 @@ while True:
         print("-"*99)
 
     elif opcao == 6:
-        print("\n6- Gerar Codigo dos Alunos da Turma de TI")
+        print("\n6- Gerar Código dos Alunos da Turma de TI")
         print("-"*99)
 
     elif opcao == 7:
-        print("\n7- Gerar Relatorio de Aprovação da Turma")
+        print("\n7- Gerar Relatório de Aprovação da Turma")
         print("-"*99)
 
     elif opcao == 8:
@@ -81,7 +90,7 @@ while True:
         break
 
     else:
-        print("\nOpção Invalida!\nTente Novamente.\n")
+        print("\nOpção Inválida!\nTente Novamente.\n")
 
 print("\nEncerrando Programa...\n")
 print("="*99)
